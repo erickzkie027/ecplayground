@@ -4,11 +4,8 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Arto Chat Widget Test</title>
-</head>
-<body>
 
-  <h1>Hello World</h1>
-  <!-- For Staging  -->
+    <!-- For Staging  -->
   <script type="module">
   import Arto from "https://media-staging.arto.chat/arto.js";
 
@@ -26,5 +23,586 @@
       widgetType: "chat"
     });
   </script> -->
+  
+</head>
+  
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+      <a href="#" class="logo">
+        <img
+          src="https://invotra.com/wp-content/uploads/2024/10/cropped-favicon-270x270.png"
+          alt="Arto Logo"
+        />
+        <span>Arto</span>
+      </a>
+
+      <!-- App Bar Chat Starter Widget -->
+      <div id="arto-app-bar-chat-starter"></div>
+
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#demo">Demo</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="javascript:void(0)" id="arto-search-button"></a></li>
+      </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <h1>Transform Customer Experience with AI</h1>
+      <p>
+        Arto is your intelligent AI assistant that understands your business and
+        delivers personalized, instant support to your customers 24/7.
+      </p>
+      <div class="hero-buttons">
+        <a href="#demo" class="btn btn-primary">See It In Action</a>
+        <a href="#features" class="btn btn-secondary">Learn More</a>
+      </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="container">
+        <!-- Features Section -->
+        <section id="features">
+          <h2 class="section-title">Why Choose Arto?</h2>
+          <p class="section-subtitle">
+            Powerful AI capabilities designed to enhance every customer
+            interaction
+          </p>
+
+          <div class="features-grid">
+            <div class="feature-card">
+              <div class="feature-icon purple">🤖</div>
+              <h3>Intelligent Conversations</h3>
+              <p>
+                Powered by advanced AI to understand context and provide
+                accurate, helpful responses that feel natural.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon blue">⚡</div>
+              <h3>Instant Responses</h3>
+              <p>
+                No more waiting. Get immediate answers to customer queries with
+                sub-second response times.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon pink">🎨</div>
+              <h3>Fully Customizable</h3>
+              <p>
+                Match your brand perfectly with customizable colors, fonts,
+                avatars, and conversation styles.
+              </p>
+            </div>
+            <div class="feature-card">
+              <div class="feature-icon green">📊</div>
+              <h3>Actionable Insights</h3>
+              <p>
+                Learn from every conversation with detailed analytics and
+                feedback collection.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Widget Demo Section -->
+        <section id="demo" class="widget-demo-section">
+          <h3>🚀 Try the Inline Chat Widget</h3>
+          <p>
+            Experience our seamless inline chat integration. Ask any question
+            below to see Arto in action.
+          </p>
+
+          <!-- Inline Chat Starter Widget Container -->
+          <div id="arto-inline-chat-starter"></div>
+        </section>
+
+        <!-- Testimonials -->
+        <section id="testimonials" class="testimonials">
+          <h2 class="section-title">Loved by Teams Worldwide</h2>
+          <p class="section-subtitle">
+            See what our customers have to say about Arto
+          </p>
+
+          <div class="testimonial-grid">
+            <div class="testimonial-card">
+              <p class="testimonial-text">
+                "Arto has completely transformed our customer support. Response
+                times dropped by 80% and customer satisfaction is at an all-time
+                high."
+              </p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">SJ</div>
+                <div class="testimonial-info">
+                  <h4>Sarah Johnson</h4>
+                  <p>Head of Customer Success, TechCorp</p>
+                </div>
+              </div>
+            </div>
+            <div class="testimonial-card">
+              <p class="testimonial-text">
+                "The customization options are incredible. It feels like we
+                built this AI assistant ourselves. Our brand voice comes through
+                perfectly."
+              </p>
+              <div class="testimonial-author">
+                <div class="testimonial-avatar">MR</div>
+                <div class="testimonial-info">
+                  <h4>Michael Rodriguez</h4>
+                  <p>CTO, StartupFlow</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Stats Section -->
+        <section class="stats-section">
+          <div class="stats-grid">
+            <div class="stat-item">
+              <h2>10M+</h2>
+              <p>Conversations Handled</p>
+            </div>
+            <div class="stat-item">
+              <h2>99.9%</h2>
+              <p>Uptime Guarantee</p>
+            </div>
+            <div class="stat-item">
+              <h2>4.9★</h2>
+              <p>Customer Rating</p>
+            </div>
+            <div class="stat-item">
+              <h2>&lt; 1s</h2>
+              <p>Average Response Time</p>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+        <div class="footer-links">
+          <a href="#">About</a>
+          <a href="#">Features</a>
+          <a href="#">Pricing</a>
+          <a href="#">Documentation</a>
+          <a href="#">Support</a>
+          <a href="#">Privacy Policy</a>
+        </div>
+        <p class="footer-bottom">
+          © 2024 Arto by Invotra. All rights reserved. Powered by advanced AI
+          technology.
+        </p>
+      </div>
+    </footer>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family:
+          'Inter',
+          -apple-system,
+          BlinkMacSystemFont,
+          'Segoe UI',
+          Roboto,
+          sans-serif;
+        line-height: 1.6;
+        color: #1f2937;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        min-height: 100vh;
+      }
+
+      /* Navigation */
+      .navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 99999999999999999999;
+        background: rgba(255, 255, 255, 0.95);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        font-weight: 700;
+        font-size: 1.5rem;
+        color: #1c1362;
+        text-decoration: none;
+      }
+
+      .logo img {
+        height: 40px;
+      }
+
+      .nav-links {
+        display: flex;
+        gap: 2rem;
+        list-style: none;
+      }
+
+      .nav-links a {
+        text-decoration: none;
+        color: #4b5563;
+        font-weight: 500;
+        transition: color 0.2s;
+      }
+
+      .nav-links a:hover {
+        color: #1c1362;
+      }
+
+      /* App Bar Widget Container - Positioned in navbar */
+      #arto-app-bar-chat-starter {
+        display: flex;
+        align-items: center;
+      }
+
+      /* Hero Section */
+      .hero {
+        padding: 10rem 2rem 6rem;
+        text-align: center;
+        color: white;
+      }
+
+      .hero h1 {
+        font-size: 3.5rem;
+        font-weight: 800;
+        margin-bottom: 1.5rem;
+        line-height: 1.2;
+        text-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+      }
+
+      .hero p {
+        font-size: 1.25rem;
+        max-width: 700px;
+        margin: 0 auto 2.5rem;
+        opacity: 0.95;
+      }
+
+      .hero-buttons {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        flex-wrap: wrap;
+      }
+
+      .btn {
+        padding: 0.875rem 2rem;
+        border-radius: 50px;
+        font-weight: 600;
+        font-size: 1rem;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        border: none;
+      }
+
+      .btn-primary {
+        background: white;
+        color: #764ba2;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+      }
+
+      .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 25px rgba(0, 0, 0, 0.3);
+      }
+
+      .btn-secondary {
+        background: transparent;
+        color: white;
+        border: 2px solid white;
+      }
+
+      .btn-secondary:hover {
+        background: white;
+        color: #764ba2;
+      }
+
+      /* Main Content */
+      .main-content {
+        background: #f9fafb;
+        border-radius: 40px 40px 0 0;
+        padding: 5rem 2rem;
+        margin-top: -40px;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .section-title {
+        font-size: 2.5rem;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 1rem;
+        color: #1c1362;
+      }
+
+      .section-subtitle {
+        text-align: center;
+        color: #6b7280;
+        max-width: 600px;
+        margin: 0 auto 3rem;
+        font-size: 1.1rem;
+      }
+
+      /* Features Grid */
+      .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 2rem;
+        margin-bottom: 5rem;
+      }
+
+      .feature-card {
+        background: white;
+        border-radius: 20px;
+        padding: 2rem;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        transition: all 0.3s ease;
+        border: 1px solid #e5e7eb;
+      }
+
+      .feature-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+      }
+
+      .feature-icon {
+        width: 60px;
+        height: 60px;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1.5rem;
+        font-size: 1.75rem;
+      }
+
+      .feature-icon.purple {
+        background: linear-gradient(135deg, #667eea, #764ba2);
+      }
+      .feature-icon.blue {
+        background: linear-gradient(135deg, #4facfe, #00f2fe);
+      }
+      .feature-icon.pink {
+        background: linear-gradient(135deg, #f093fb, #f5576c);
+      }
+      .feature-icon.green {
+        background: linear-gradient(135deg, #11998e, #38ef7d);
+      }
+
+      .feature-card h3 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        margin-bottom: 0.75rem;
+        color: #1f2937;
+      }
+
+      .feature-card p {
+        color: #6b7280;
+        font-size: 0.95rem;
+      }
+
+      /* Inline Widget Demo Section */
+      .widget-demo-section {
+        background: white;
+        border-radius: 24px;
+        padding: 3rem;
+        margin-bottom: 4rem;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        border: 1px solid #e5e7eb;
+      }
+
+      .widget-demo-section h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 0.75rem;
+        color: #1f2937;
+      }
+
+      .widget-demo-section > p {
+        color: #6b7280;
+        margin-bottom: 2rem;
+      }
+
+      #arto-inline-chat-starter {
+        margin-top: 1.5rem;
+      }
+
+      /* Testimonials */
+      .testimonials {
+        margin-bottom: 5rem;
+      }
+
+      .testimonial-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+        gap: 2rem;
+      }
+
+      .testimonial-card {
+        background: white;
+        border-radius: 20px;
+        padding: 2rem;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        border: 1px solid #e5e7eb;
+      }
+
+      .testimonial-text {
+        font-size: 1.1rem;
+        color: #4b5563;
+        margin-bottom: 1.5rem;
+        font-style: italic;
+        line-height: 1.7;
+      }
+
+      .testimonial-author {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+      }
+
+      .testimonial-avatar {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #667eea, #764ba2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-weight: 600;
+        font-size: 1.25rem;
+      }
+
+      .testimonial-info h4 {
+        font-weight: 600;
+        color: #1f2937;
+      }
+
+      .testimonial-info p {
+        color: #6b7280;
+        font-size: 0.875rem;
+      }
+
+      /* Stats Section */
+      .stats-section {
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        border-radius: 24px;
+        padding: 4rem 2rem;
+        margin-bottom: 5rem;
+        text-align: center;
+        color: white;
+      }
+
+      .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 2rem;
+        max-width: 900px;
+        margin: 0 auto;
+      }
+
+      .stat-item h2 {
+        font-size: 3rem;
+        font-weight: 800;
+        margin-bottom: 0.5rem;
+      }
+
+      .stat-item p {
+        opacity: 0.9;
+        font-size: 1.1rem;
+      }
+
+      /* Footer */
+      footer {
+        background: #1c1362;
+        color: white;
+        padding: 4rem 2rem 2rem;
+        text-align: center;
+      }
+
+      .footer-content {
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+
+      .footer-links {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-bottom: 2rem;
+        flex-wrap: wrap;
+      }
+
+      .footer-links a {
+        color: rgba(255, 255, 255, 0.7);
+        text-decoration: none;
+        transition: color 0.2s;
+      }
+
+      .footer-links a:hover {
+        color: white;
+      }
+
+      .footer-bottom {
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        padding-top: 2rem;
+        color: rgba(255, 255, 255, 0.5);
+        font-size: 0.875rem;
+      }
+
+      /* Search Button Container */
+      #arto-search-button {
+        display: inline-flex !important;
+      }
+
+      /* Responsive */
+      @media (max-width: 768px) {
+        .hero h1 {
+          font-size: 2.5rem;
+        }
+
+        .navbar {
+          padding: 1rem;
+        }
+
+        .nav-links {
+          display: none;
+        }
+
+        .section-title {
+          font-size: 2rem;
+        }
+
+        .widget-demo-section {
+          padding: 1.5rem;
+        }
+      }
+    </style>
+  </body>
+<body>
+
+
 </body>
 </html>
